@@ -4,122 +4,220 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ريكفري العين | سحب وإنقاذ السيارات في العين 24/7</title>
+<title>ريكفري العين | سطحة هيدروليكية وسحب سيارات في العين 24/7</title>
 
 <meta name="description" content="ريكفري العين لخدمات سحب وإنقاذ السيارات والسطحة الهيدروليكية ونقل السيارات الرياضية والفاخرة والمساعدة على الطريق في العين. اتصل الآن 0506652237.">
 
-<meta name="keywords" content="ريكفري العين, سطحة العين, سطحة هيدروليكية العين, سحب سيارات العين, نقل سيارات رياضية العين, نقل سيارات فاخرة العين, إنقاذ سيارات العين, سحب من الرمال, بطارية, تبديل إطار, توصيل وقود">
+<meta name="keywords" content="ريكفري العين, سطحة العين, سطحة هيدروليكية العين, سحب سيارات العين, نقل سيارات فاخرة العين, نقل سيارات رياضية العين, إنقاذ سيارات العين, سحب من الرمال, مساعدة على الطريق">
 
 <meta name="robots" content="index, follow">
 
-<style>
-*{box-sizing:border-box}
+<meta name="theme-color" content="#0a0d12">
 
-body{
+<style>
+
+*{
+box-sizing:border-box;
 margin:0;
-font-family:Tahoma,Arial,sans-serif;
-background:#0b0f14;
-color:#fff;
-direction:rtl;
-line-height:1.8;
+padding:0;
 }
 
-a{text-decoration:none}
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Tahoma,Arial,sans-serif;
+background:#080b10;
+color:#f5f5f5;
+line-height:1.9;
+direction:rtl;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
 
 .container{
 width:92%;
-max-width:1100px;
+max-width:1150px;
 margin:auto;
 }
 
+/* HEADER */
+
 header{
-background:#0b0f14;
-border-bottom:1px solid #26313d;
-padding:18px 0;
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(8,11,16,.96);
+border-bottom:1px solid rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
 }
 
 .nav{
+height:76px;
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
+gap:25px;
 }
 
 .logo{
-color:#f2b84b;
-font-size:27px;
-font-weight:bold;
+font-size:28px;
+font-weight:900;
+color:#e6b75a;
+letter-spacing:.2px;
+}
+
+nav{
+display:flex;
+gap:25px;
 }
 
 nav a{
-color:#ddd;
-margin-right:20px;
+color:#d7d7d7;
+font-size:15px;
+transition:.3s;
 }
 
+nav a:hover{
+color:#e6b75a;
+}
+
+/* HERO */
+
 .hero{
+position:relative;
+overflow:hidden;
+padding:105px 20px 90px;
 text-align:center;
-padding:80px 20px;
-background:linear-gradient(180deg,#17212c,#0b0f14);
+background:
+radial-gradient(circle at 50% 0%,rgba(230,183,90,.18),transparent 38%),
+linear-gradient(180deg,#151b23 0%,#080b10 100%);
+}
+
+.hero:before{
+content:"";
+position:absolute;
+width:420px;
+height:420px;
+border-radius:50%;
+background:rgba(230,183,90,.06);
+top:-220px;
+right:-180px;
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.badge{
+display:inline-block;
+padding:8px 18px;
+border:1px solid rgba(230,183,90,.45);
+border-radius:50px;
+color:#e6b75a;
+font-size:14px;
+font-weight:bold;
+margin-bottom:22px;
+background:rgba(230,183,90,.05);
 }
 
 .hero h1{
-font-size:56px;
-margin:10px 0;
-color:#f2b84b;
+font-size:clamp(42px,7vw,72px);
+line-height:1.2;
+color:#e6b75a;
+font-weight:900;
+margin-bottom:12px;
 }
 
 .hero h2{
-font-size:28px;
-margin:10px 0;
+font-size:clamp(22px,3vw,32px);
+margin-bottom:22px;
+color:#fff;
 }
 
 .hero p{
-max-width:820px;
-margin:20px auto;
-color:#c5cbd2;
-font-size:19px;
+max-width:850px;
+margin:auto;
+color:#bfc4ca;
+font-size:18px;
 }
 
-.buttons{
-margin-top:25px;
+.hero-buttons{
+margin-top:32px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:12px;
+flex-wrap:wrap;
 }
 
 .btn{
-display:inline-block;
-padding:15px 25px;
-margin:8px;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+padding:15px 27px;
 border-radius:10px;
-font-weight:bold;
-font-size:17px;
+font-size:16px;
+font-weight:900;
+transition:.3s;
+border:1px solid transparent;
 }
 
-.call{
-background:#f2b84b;
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.btn-call{
+background:#e6b75a;
 color:#111;
 }
 
-.whatsapp{
-background:#25d366;
-color:white;
+.btn-whatsapp{
+background:#20c968;
+color:#fff;
 }
+
+.btn-outline{
+border-color:#3a414a;
+background:#12171e;
+color:#fff;
+}
+
+/* SECTIONS */
 
 section{
-padding:60px 0;
+padding:85px 0;
 }
 
-.title{
+.section-head{
 text-align:center;
-margin-bottom:35px;
+margin-bottom:45px;
 }
 
-.title h2{
-font-size:34px;
-color:#f2b84b;
-margin-bottom:8px;
+.section-head span{
+color:#e6b75a;
+font-size:14px;
+font-weight:bold;
 }
 
-.title p{
-color:#bbb;
+.section-head h2{
+font-size:36px;
+margin:8px 0;
 }
+
+.section-head p{
+color:#9fa7b0;
+max-width:700px;
+margin:auto;
+}
+
+/* SERVICES */
 
 .services{
 display:grid;
@@ -128,77 +226,275 @@ gap:20px;
 }
 
 .card{
-background:#121922;
-border:1px solid #26313d;
-border-radius:16px;
-padding:25px;
-text-align:center;
+background:linear-gradient(145deg,#141a21,#0f141a);
+border:1px solid #252d36;
+border-radius:18px;
+padding:28px 23px;
+transition:.3s;
 }
 
-.card .icon{
-font-size:38px;
+.card:hover{
+transform:translateY(-6px);
+border-color:rgba(230,183,90,.55);
+}
+
+.icon{
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:15px;
+background:rgba(230,183,90,.09);
+font-size:29px;
+margin-bottom:18px;
 }
 
 .card h3{
-font-size:21px;
-margin:10px 0;
+font-size:20px;
+margin-bottom:9px;
 }
 
 .card p{
-color:#b9c1ca;
+color:#aeb5bd;
+font-size:15px;
 }
 
-.feature{
-border:2px solid #f2b84b;
+/* FEATURE */
+
+.feature-section{
+background:#0d1218;
+border-top:1px solid #171e26;
+border-bottom:1px solid #171e26;
 }
 
-.area{
-background:#10161d;
+.feature-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+align-items:stretch;
+}
+
+.feature-box{
+padding:40px;
+border-radius:22px;
+background:
+linear-gradient(145deg,#171e26,#0d1218);
+border:1px solid rgba(230,183,90,.25);
+}
+
+.feature-box h2{
+font-size:30px;
+margin-bottom:15px;
+color:#e6b75a;
+}
+
+.feature-box p{
+color:#b7bec6;
+margin-bottom:18px;
+}
+
+.feature-list{
+list-style:none;
+}
+
+.feature-list li{
+padding:8px 0;
+color:#ddd;
+}
+
+.feature-list li:before{
+content:"✓";
+color:#e6b75a;
+font-weight:bold;
+margin-left:9px;
+}
+
+/* TRUST */
+
+.trust{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.trust-box{
+text-align:center;
+padding:32px 20px;
+background:#11161d;
+border:1px solid #242c35;
+border-radius:17px;
+}
+
+.trust-number{
+font-size:34px;
+font-weight:900;
+color:#e6b75a;
+}
+
+.trust-box h3{
+margin:8px 0;
+}
+
+.trust-box p{
+color:#9fa7b0;
+font-size:14px;
+}
+
+/* CONTACT */
+
+.contact-section{
+background:
+radial-gradient(circle at center,rgba(230,183,90,.08),transparent 50%),
+#0a0e13;
 }
 
 .contact{
+max-width:850px;
+margin:auto;
 text-align:center;
-background:#121922;
-border-radius:18px;
-padding:40px 20px;
-border:1px solid #26313d;
+padding:55px 25px;
+border:1px solid rgba(230,183,90,.25);
+border-radius:24px;
+background:#10151c;
+}
+
+.contact h2{
+font-size:38px;
+margin-bottom:10px;
+}
+
+.contact p{
+color:#aeb5bd;
 }
 
 .phone{
 display:block;
 direction:ltr;
-color:#f2b84b;
-font-size:38px;
-font-weight:bold;
-margin:20px;
+font-size:42px;
+font-weight:900;
+color:#e6b75a;
+margin:20px 0;
+letter-spacing:1px;
 }
+
+/* FOOTER */
 
 footer{
+padding:35px 20px;
 text-align:center;
-padding:30px;
-color:#999;
-border-top:1px solid #26313d;
+background:#06080b;
+border-top:1px solid #1b222a;
+color:#7f8790;
 }
 
-@media(max-width:800px){
+.footer-logo{
+color:#e6b75a;
+font-size:23px;
+font-weight:bold;
+margin-bottom:8px;
+}
+
+/* FLOATING WHATSAPP */
+
+.whatsapp-float{
+position:fixed;
+left:20px;
+bottom:20px;
+z-index:999;
+width:58px;
+height:58px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#20c968;
+color:white;
+font-size:27px;
+box-shadow:0 8px 30px rgba(0,0,0,.5);
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+.nav{
+height:68px;
+}
+
+nav{
+display:none;
+}
+
+.services{
+grid-template-columns:1fr 1fr;
+}
+
+.feature-grid{
+grid-template-columns:1fr;
+}
+
+.trust{
+grid-template-columns:1fr;
+}
+
+.hero{
+padding-top:75px;
+}
+
+}
+
+@media(max-width:600px){
+
+.container{
+width:90%;
+}
 
 .services{
 grid-template-columns:1fr;
 }
 
 .hero h1{
-font-size:43px;
+font-size:45px;
 }
 
 .hero h2{
 font-size:23px;
 }
 
-nav a{
-display:none;
+.hero p{
+font-size:16px;
+}
+
+.section-head h2{
+font-size:29px;
+}
+
+.feature-box{
+padding:28px 20px;
+}
+
+.feature-box h2{
+font-size:26px;
+}
+
+.phone{
+font-size:31px;
+}
+
+.btn{
+width:100%;
+margin:5px 0;
+}
+
+.hero-buttons{
+width:100%;
+max-width:400px;
+margin:28px auto 0;
 }
 
 }
+
 </style>
 </head>
 
@@ -224,30 +520,44 @@ display:none;
 </header>
 
 
+<!-- HERO -->
+
 <section class="hero">
 
-<div class="container">
+<div class="container hero-content">
 
-<h1>ريكفري العين</h1>
+<div class="badge">
+خدمة ريكفري في العين على مدار الساعة
+</div>
 
-<h2>سحب وإنقاذ السيارات في العين على مدار الساعة</h2>
+<h1>
+ريكفري العين
+</h1>
+
+<h2>
+سحب وإنقاذ ونقل السيارات 24/7
+</h2>
 
 <p>
-خدمات ريكفري متكاملة لسحب ونقل وإنقاذ المركبات المتعطلة
-والسيارات الرياضية والفاخرة، مع خدمات السطحة الهيدروليكية
-والمساعدة على الطريق داخل العين والمناطق القريبة.
+خدمات احترافية لسحب وإنقاذ ونقل السيارات داخل العين،
+مع خدمة السطحة الهيدروليكية للسيارات الرياضية والفاخرة
+والسيارات منخفضة الارتفاع.
 </p>
 
-<div class="buttons">
+<div class="hero-buttons">
 
-<a class="btn call" href="tel:+971506652237">
-📞 اتصل الآن 0506652237
+<a class="btn btn-call" href="tel:+971506652237">
+📞 اتصال 0506652237
 </a>
 
-<a class="btn whatsapp"
+<a class="btn btn-whatsapp"
 href="https://wa.me/971506652237"
 target="_blank">
 💬 واتساب 0506652237
+</a>
+
+<a class="btn btn-outline" href="#services">
+شاهد خدماتنا
 </a>
 
 </div>
@@ -257,16 +567,22 @@ target="_blank">
 </section>
 
 
+<!-- SERVICES -->
+
 <section id="services">
 
 <div class="container">
 
-<div class="title">
+<div class="section-head">
 
-<h2>خدمات ريكفري العين</h2>
+<span>خدماتنا</span>
+
+<h2>
+خدمات ريكفري العين
+</h2>
 
 <p>
-خدمات متكاملة لسحب ونقل وإنقاذ السيارات والمساعدة على الطريق
+حلول متكاملة لسحب ونقل وإنقاذ السيارات والمساعدة على الطريق.
 </p>
 
 </div>
@@ -275,30 +591,33 @@ target="_blank">
 <div class="services">
 
 
-<div class="card feature">
+<div class="card">
 
 <div class="icon">🚘</div>
 
-<h3>نقل السيارات الرياضية والفاخرة بالسطحة الهيدروليكية</h3>
+<h3>
+السطحة الهيدروليكية
+</h3>
 
 <p>
-نقل آمن للسيارات الرياضية والفاخرة والسيارات منخفضة الارتفاع
-باستخدام السطحة الهيدروليكية، مع تحميل المركبة بالكامل على المنصة.
+نقل السيارات الرياضية والفاخرة والسيارات منخفضة الارتفاع
+بواسطة منصة هيدروليكية كاملة وبطريقة مناسبة للنقل.
 </p>
 
 </div>
 
 
-<div class="card feature">
+<div class="card">
 
 <div class="icon">🚛</div>
 
-<h3>سطحة هيدروليكية كاملة</h3>
+<h3>
+سطحة كاملة لنقل السيارات
+</h3>
 
 <p>
-خدمة سحب ونقل السيارات بالكامل على منصة هيدروليكية،
-مناسبة للسيارات الرياضية والفاخرة والمركبات التي تحتاج إلى
-عناية خاصة أثناء النقل.
+تحميل المركبة بالكامل على منصة السطحة ونقلها إلى المكان
+المطلوب.
 </p>
 
 </div>
@@ -308,11 +627,12 @@ target="_blank">
 
 <div class="icon">🚗</div>
 
-<h3>سحب السيارات</h3>
+<h3>
+سحب السيارات
+</h3>
 
 <p>
-سحب ونقل السيارات المتعطلة داخل العين والمناطق القريبة
-إلى الورشة أو المكان المطلوب.
+سحب ونقل السيارات المتعطلة داخل العين والمناطق القريبة.
 </p>
 
 </div>
@@ -320,13 +640,30 @@ target="_blank">
 
 <div class="card">
 
-<div class="icon">🆘</div>
+<div class="icon">🏎️</div>
 
-<h3>إنقاذ المركبات المتعطلة</h3>
+<h3>
+نقل السيارات الرياضية
+</h3>
 
 <p>
-مساعدة وإنقاذ المركبات التي تعرضت لعطل أو توقفت بشكل مفاجئ
-على الطريق.
+خدمة نقل مناسبة للسيارات الرياضية والسيارات منخفضة الارتفاع.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">💎</div>
+
+<h3>
+نقل السيارات الفاخرة
+</h3>
+
+<p>
+نقل السيارات الفاخرة والمركبات التي تحتاج إلى عناية خاصة
+أثناء النقل.
 </p>
 
 </div>
@@ -336,11 +673,12 @@ target="_blank">
 
 <div class="icon">⚠️</div>
 
-<h3>سحب مركبات الحوادث</h3>
+<h3>
+سحب سيارات الحوادث
+</h3>
 
 <p>
-سحب ونقل السيارات المتضررة من الحوادث حسب حالة المركبة
-وموقعها.
+سحب ونقل المركبات المتضررة من الحوادث حسب حالة السيارة.
 </p>
 
 </div>
@@ -350,25 +688,12 @@ target="_blank">
 
 <div class="icon">🏜️</div>
 
-<h3>إنقاذ السيارات من الرمال</h3>
+<h3>
+إنقاذ السيارات من الرمال
+</h3>
 
 <p>
-سحب وإنقاذ المركبات العالقة في الرمال والمناطق الصحراوية
-داخل العين والمناطق القريبة.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">🚙</div>
-
-<h3>إنقاذ المركبات العالقة</h3>
-
-<p>
-مساعدة المركبات العالقة في الأماكن الصعبة والمواقف التي
-تحتاج إلى سحب وإنقاذ.
+سحب وإنقاذ المركبات العالقة في الرمال والمناطق الصحراوية.
 </p>
 
 </div>
@@ -378,11 +703,12 @@ target="_blank">
 
 <div class="icon">🔋</div>
 
-<h3>اشتراك بطارية</h3>
+<h3>
+اشتراك بطارية
+</h3>
 
 <p>
-مساعدة عند ضعف أو نفاد بطارية السيارة وتشغيل المركبة
-على الطريق.
+مساعدة عند ضعف أو نفاد بطارية السيارة وتشغيل المركبة.
 </p>
 
 </div>
@@ -392,7 +718,9 @@ target="_blank">
 
 <div class="icon">🛞</div>
 
-<h3>تبديل الإطارات</h3>
+<h3>
+تبديل الإطارات
+</h3>
 
 <p>
 مساعدة في حالات الإطار المثقوب وتبديل الإطار عند الحاجة.
@@ -405,7 +733,9 @@ target="_blank">
 
 <div class="icon">⛽</div>
 
-<h3>توصيل الوقود</h3>
+<h3>
+توصيل الوقود
+</h3>
 
 <p>
 مساعدة عند نفاد الوقود وتوصيل الوقود إلى موقع المركبة.
@@ -416,13 +746,14 @@ target="_blank">
 
 <div class="card">
 
-<div class="icon">🔑</div>
+<div class="icon">🚙</div>
 
-<h3>مساعدة عند إغلاق السيارة</h3>
+<h3>
+إنقاذ المركبات العالقة
+</h3>
 
 <p>
-مساعدة في الحالات التي يتم فيها إغلاق السيارة والمفتاح
-بداخلها أو عند الحاجة إلى المساعدة في الوصول إلى السيارة.
+مساعدة المركبات العالقة في الأماكن الصعبة والمناطق المفتوحة.
 </p>
 
 </div>
@@ -430,13 +761,14 @@ target="_blank">
 
 <div class="card">
 
-<div class="icon">📍</div>
+<div class="icon">🆘</div>
 
-<h3>المساعدة على الطريق</h3>
+<h3>
+المساعدة على الطريق
+</h3>
 
 <p>
-خدمة مساعدة للمركبات في حالات الطوارئ والأعطال على الطريق
-على مدار الساعة.
+خدمات مساعدة للمركبات في حالات الطوارئ والأعطال على الطريق.
 </p>
 
 </div>
@@ -449,62 +781,84 @@ target="_blank">
 </section>
 
 
-<section id="hydraulic" class="area">
+<!-- HYDRAULIC -->
+
+<section id="hydraulic" class="feature-section">
 
 <div class="container">
 
-<div class="title">
+<div class="section-head">
 
-<h2>السطحة الهيدروليكية للسيارات الرياضية والفاخرة</h2>
+<span>خدمة مميزة</span>
+
+<h2>
+السطحة الهيدروليكية للسيارات الرياضية والفاخرة
+</h2>
 
 <p>
-نقل آمن للسيارات التي تحتاج إلى عناية خاصة
+خدمة نقل مخصصة للسيارات التي تحتاج إلى تحميل كامل على المنصة.
 </p>
 
 </div>
 
 
-<div class="services">
+<div class="feature-grid">
 
 
-<div class="card">
+<div class="feature-box">
 
-<div class="icon">🏎️</div>
-
-<h3>السيارات الرياضية</h3>
+<h2>
+🚘 نقل آمن للسيارات الرياضية والفاخرة
+</h2>
 
 <p>
-نقل السيارات الرياضية والسيارات منخفضة الارتفاع بواسطة
-السطحة الهيدروليكية مع تحميل السيارة بالكامل على المنصة.
+نوفر خدمة السطحة الهيدروليكية لنقل السيارات الرياضية
+والفاخرة والسيارات منخفضة الارتفاع بطريقة مناسبة للنقل.
 </p>
+
+<ul class="feature-list">
+
+<li>
+تحميل السيارة بالكامل على المنصة
+</li>
+
+<li>
+مناسبة للسيارات الرياضية منخفضة الارتفاع
+</li>
+
+<li>
+مناسبة للسيارات الفاخرة
+</li>
+
+<li>
+نقل المركبات المتضررة أو غير القابلة للقيادة
+</li>
+
+<li>
+نقل السيارة إلى الورشة أو الموقع المطلوب
+</li>
+
+</ul>
 
 </div>
 
 
-<div class="card">
+<div class="feature-box">
 
-<div class="icon">💎</div>
-
-<h3>السيارات الفاخرة</h3>
-
-<p>
-خدمة نقل مناسبة للسيارات الفاخرة والمركبات التي تتطلب
-عناية إضافية أثناء السحب والنقل.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">⬆️</div>
-
-<h3>تحميل كامل على المنصة</h3>
+<h2>
+🚛 سطحة هيدروليكية كاملة
+</h2>
 
 <p>
-يتم تحميل المركبة بالكامل على منصة السطحة الهيدروليكية
-بدلاً من سحبها مباشرة على عجلاتها.
+عندما تحتاج السيارة إلى نقل كامل بدلاً من سحبها على عجلاتها،
+فإن السطحة الهيدروليكية توفر طريقة مناسبة لتحميل المركبة
+ونقلها.
 </p>
+
+<a class="btn btn-call"
+href="tel:+971506652237">
+📞 اتصل الآن 0506652237
+</a>
 
 </div>
 
@@ -515,56 +869,77 @@ target="_blank">
 
 </section>
 
+
+<!-- TRUST -->
 
 <section id="about">
 
 <div class="container">
 
-<div class="title">
+<div class="section-head">
 
-<h2>لماذا تختار ريكفري العين؟</h2>
+<span>لماذا نحن</span>
+
+<h2>
+لماذا تختار ريكفري العين؟
+</h2>
 
 <p>
-خدمة سريعة وسهولة في التواصل
+سهولة التواصل وخدمات متنوعة لسحب ونقل وإنقاذ المركبات.
 </p>
 
 </div>
 
 
-<div class="services">
+<div class="trust">
 
 
-<div class="card">
+<div class="trust-box">
 
-<h3>متوفر على مدار الساعة</h3>
+<div class="trust-number">
+24/7
+</div>
+
+<h3>
+متوفر على مدار الساعة
+</h3>
 
 <p>
-خدمات ريكفري ومساعدة على الطريق للحالات الطارئة
-على مدار 24 ساعة.
+للطوارئ والمساعدة على الطريق.
 </p>
 
 </div>
 
 
-<div class="card">
+<div class="trust-box">
 
-<h3>خدمة داخل العين</h3>
+<div class="trust-number">
+العين
+</div>
+
+<h3>
+خدمة داخل العين
+</h3>
 
 <p>
-نقدم خدمات سحب ونقل وإنقاذ السيارات داخل العين
-والمناطق القريبة.
+خدمات سحب ونقل وإنقاذ المركبات داخل العين والمناطق القريبة.
 </p>
 
 </div>
 
 
-<div class="card">
+<div class="trust-box">
 
-<h3>سيارات رياضية وفاخرة</h3>
+<div class="trust-number">
+0506652237
+</div>
+
+<h3>
+تواصل مباشر
+</h3>
 
 <p>
-نوفر خدمة السطحة الهيدروليكية لنقل السيارات الرياضية
-والفاخرة والسيارات منخفضة الارتفاع.
+اتصل أو تواصل عبر واتساب وأرسل موقع المركبة.
 </p>
 
 </div>
@@ -577,7 +952,9 @@ target="_blank">
 </section>
 
 
-<section id="contact">
+<!-- CONTACT -->
+
+<section id="contact" class="contact-section">
 
 <div class="container">
 
@@ -588,7 +965,7 @@ target="_blank">
 </h2>
 
 <p>
-اتصل بنا أو تواصل معنا عبر واتساب وأرسل موقع المركبة
+اتصل بنا أو تواصل عبر واتساب وأرسل موقع المركبة
 للحصول على المساعدة.
 </p>
 
@@ -596,15 +973,20 @@ target="_blank">
 0506652237
 </a>
 
-<a class="btn call" href="tel:+971506652237">
+<div class="hero-buttons">
+
+<a class="btn btn-call"
+href="tel:+971506652237">
 📞 اتصال 0506652237
 </a>
 
-<a class="btn whatsapp"
+<a class="btn btn-whatsapp"
 href="https://wa.me/971506652237"
 target="_blank">
 💬 واتساب 0506652237
 </a>
+
+</div>
 
 </div>
 
@@ -615,14 +997,27 @@ target="_blank">
 
 <footer>
 
-© 2026 ريكفري العين
+<div class="footer-logo">
+ريكفري العين
+</div>
 
-<br>
+<p>
+سحب وإنقاذ ونقل السيارات والمساعدة على الطريق في العين
+</p>
 
-سحب وإنقاذ السيارات والمساعدة على الطريق في العين
+<p>
+© 2026 جميع الحقوق محفوظة
+</p>
 
 </footer>
 
+
+<a class="whatsapp-float"
+href="https://wa.me/971506652237"
+target="_blank"
+aria-label="واتساب">
+💬
+</a>
 
 </body>
 </html>
