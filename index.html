@@ -1,1588 +1,1918 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b10">
+  <meta name="description" content="Al Ain Recovery provides 24/7 emergency car recovery, towing, flatbed transport, sports car recovery, battery boost, tyre assistance and roadside assistance across Al Ain, UAE. WhatsApp 0551525352.">
+  <meta name="keywords" content="car recovery Al Ain, towing Al Ain, tow truck Al Ain, vehicle recovery UAE, roadside assistance Al Ain, flatbed recovery Al Ain, sports car recovery Al Ain, emergency towing Al Ain">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://alainrecoveryuae.com/">
 
-<title>Al Ain Recovery | 24/7 Car Recovery & Towing</title>
+  <title>Al Ain Recovery | 24/7 Tow Truck & Car Recovery UAE</title>
 
-<meta name="description" content="Al Ain Recovery provides 24/7 car recovery, towing, breakdown assistance, flatbed recovery, battery boost, tyre assistance and emergency roadside services in Al Ain, UAE.">
-<meta name="keywords" content="Al Ain Recovery, car recovery Al Ain, towing Al Ain, car towing UAE, breakdown recovery Al Ain, flatbed recovery Al Ain, emergency recovery Al Ain">
-<meta name="author" content="Al Ain Recovery">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Al Ain Recovery | 24/7 Tow Truck & Car Recovery">
+  <meta property="og:description" content="24/7 professional vehicle recovery and towing in Al Ain, UAE. WhatsApp 0551525352.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alainrecoveryuae.com/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1800&q=85">
 
-<meta property="og:title" content="Al Ain Recovery | 24/7 Emergency Vehicle Recovery">
-<meta property="og:description" content="24/7 professional vehicle recovery and towing services in Al Ain, UAE.">
-<meta property="og:type" content="website">
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"AutomotiveBusiness",
+    "name":"Al Ain Recovery",
+    "url":"https://alainrecoveryuae.com/",
+    "telephone":"+971551525352",
+    "description":"24/7 vehicle recovery, towing and roadside assistance in Al Ain, UAE.",
+    "areaServed":{
+      "@type":"City",
+      "name":"Al Ain"
+    },
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Al Ain",
+      "addressCountry":"AE"
+    },
+    "openingHours":"Mo-Su 00:00-23:59",
+    "serviceType":[
+      "Car Recovery",
+      "Tow Truck",
+      "Flatbed Recovery",
+      "Roadside Assistance",
+      "Sports Car Recovery",
+      "Battery Boost",
+      "Tyre Assistance",
+      "Fuel Delivery",
+      "Accident Recovery",
+      "Vehicle Transport"
+    ]
+  }
+  </script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://images.unsplash.com">
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    :root{
+      --bg:#07090d;
+      --bg2:#0c1017;
+      --card:#10151d;
+      --card2:#141a23;
+      --text:#f5f7fa;
+      --muted:#9ca6b4;
+      --line:rgba(255,255,255,.09);
+      --accent:#e9eef5;
+      --green:#25d366;
+      --green2:#128c7e;
+      --red:#ff4b4b;
+      --gold:#d9b86c;
+      --max:1240px;
+    }
 
-<style>
+    html{
+      scroll-behavior:smooth;
+      background:var(--bg);
+    }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      background:
+        radial-gradient(circle at 20% 0%,rgba(70,80,100,.14),transparent 32%),
+        radial-gradient(circle at 90% 30%,rgba(40,50,70,.13),transparent 30%),
+        var(--bg);
+      color:var(--text);
+      overflow-x:hidden;
+      line-height:1.6;
+    }
 
-html{
-    scroll-behavior:smooth;
-}
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
 
-body{
-    font-family:"Inter",Arial,sans-serif;
-    background:#05070b;
-    color:#fff;
-    overflow-x:hidden;
-}
+    img{
+      display:block;
+      width:100%;
+    }
 
-a{
-    text-decoration:none;
-    color:inherit;
-}
+    button{
+      font:inherit;
+    }
 
-img{
-    width:100%;
-    display:block;
-}
+    .container{
+      width:min(var(--max),92%);
+      margin:auto;
+    }
 
-.container{
-    width:min(1180px,92%);
-    margin:auto;
-}
+    /* ================= TOP BAR ================= */
 
-/* ================= HEADER ================= */
+    .topbar{
+      background:#05070a;
+      border-bottom:1px solid var(--line);
+      min-height:40px;
+      display:flex;
+      align-items:center;
+    }
 
-header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:1000;
-    background:rgba(5,7,11,.72);
-    backdrop-filter:blur(18px);
-    border-bottom:1px solid rgba(255,255,255,.08);
-}
+    .topbar-inner{
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      font-size:13px;
+      color:#aeb7c3;
+    }
 
-.nav{
-    min-height:78px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
-}
+    .topbar-left,
+    .topbar-right{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      flex-wrap:wrap;
+    }
 
-.logo{
-    font-size:21px;
-    font-weight:900;
-    letter-spacing:-.6px;
-}
+    .status{
+      display:inline-flex;
+      align-items:center;
+      gap:7px;
+    }
 
-.logo span{
-    color:#ff334d;
-}
+    .dot{
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      background:#25d366;
+      box-shadow:0 0 12px rgba(37,211,102,.8);
+    }
 
-.nav-links{
-    display:flex;
-    align-items:center;
-    gap:28px;
-}
+    /* ================= NAV ================= */
 
-.nav-links a{
-    color:#d7dbe2;
-    font-size:14px;
-    font-weight:600;
-    transition:.3s;
-}
-
-.nav-links a:hover{
-    color:#fff;
-}
-
-.nav-btn{
-    padding:13px 20px;
-    border-radius:100px;
-    background:#fff;
-    color:#05070b!important;
-    font-weight:800!important;
-}
-
-@media(max-width:760px){
-    .nav-links{
-        display:none;
+    header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(7,9,13,.82);
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+      border-bottom:1px solid var(--line);
     }
 
     .nav{
-        min-height:68px;
-    }
-}
-
-/* ================= HERO ================= */
-
-.hero{
-    min-height:100vh;
-    position:relative;
-    display:flex;
-    align-items:center;
-    overflow:hidden;
-    background:
-    linear-gradient(90deg,rgba(3,5,8,.96) 0%,rgba(3,5,8,.78) 45%,rgba(3,5,8,.25) 100%),
-    url("https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=2200&q=90") center/cover;
-}
-
-.hero::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(0deg,#05070b 0%,transparent 35%,rgba(0,0,0,.15));
-}
-
-.hero-content{
-    position:relative;
-    z-index:2;
-    padding-top:90px;
-    max-width:760px;
-}
-
-.badge{
-    display:inline-flex;
-    align-items:center;
-    gap:9px;
-    padding:9px 15px;
-    border:1px solid rgba(255,255,255,.14);
-    background:rgba(255,255,255,.07);
-    backdrop-filter:blur(10px);
-    border-radius:100px;
-    color:#fff;
-    font-size:12px;
-    font-weight:700;
-    margin-bottom:22px;
-}
-
-.dot{
-    width:8px;
-    height:8px;
-    background:#27e06f;
-    border-radius:50%;
-    box-shadow:0 0 15px #27e06f;
-}
-
-.hero h1{
-    font-size:clamp(45px,7vw,88px);
-    line-height:.96;
-    letter-spacing:-4px;
-    font-weight:900;
-    margin-bottom:25px;
-}
-
-.hero h1 span{
-    color:#ff334d;
-}
-
-.hero p{
-    color:#d1d5dc;
-    font-size:18px;
-    line-height:1.7;
-    max-width:650px;
-    margin-bottom:32px;
-}
-
-.hero-buttons{
-    display:flex;
-    gap:13px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-    min-height:54px;
-    padding:0 25px;
-    border-radius:15px;
-    font-size:14px;
-    font-weight:800;
-    transition:.3s;
-}
-
-.btn:hover{
-    transform:translateY(-3px);
-}
-
-.btn-red{
-    background:#ff334d;
-    color:#fff;
-    box-shadow:0 15px 35px rgba(255,51,77,.25);
-}
-
-.btn-white{
-    background:#fff;
-    color:#05070b;
-}
-
-.hero-info{
-    display:flex;
-    gap:28px;
-    margin-top:45px;
-    flex-wrap:wrap;
-}
-
-.hero-info div{
-    color:#aeb4bf;
-    font-size:12px;
-}
-
-.hero-info strong{
-    display:block;
-    color:#fff;
-    font-size:16px;
-    margin-bottom:5px;
-}
-
-/* ================= COMMON ================= */
-
-section{
-    padding:110px 0;
-}
-
-.section-top{
-    margin-bottom:48px;
-    max-width:700px;
-}
-
-.eyebrow{
-    color:#ff334d;
-    font-size:12px;
-    font-weight:900;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    margin-bottom:13px;
-}
-
-.section-title{
-    font-size:clamp(34px,5vw,58px);
-    line-height:1;
-    letter-spacing:-2.5px;
-    font-weight:900;
-}
-
-.section-text{
-    margin-top:17px;
-    color:#9ca3af;
-    line-height:1.7;
-}
-
-/* ================= SERVICES ================= */
-
-.services{
-    background:#070a10;
-}
-
-.service-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-}
-
-.service-card{
-    overflow:hidden;
-    border:1px solid rgba(255,255,255,.08);
-    background:#0c1017;
-    border-radius:24px;
-    transition:.4s;
-}
-
-.service-card:hover{
-    transform:translateY(-8px);
-    border-color:rgba(255,51,77,.4);
-    box-shadow:0 25px 60px rgba(0,0,0,.3);
-}
-
-.service-img{
-    height:245px;
-    overflow:hidden;
-    position:relative;
-}
-
-.service-img img{
-    height:100%;
-    object-fit:cover;
-    transition:.5s;
-}
-
-.service-card:hover .service-img img{
-    transform:scale(1.08);
-}
-
-.service-img::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(0deg,rgba(5,7,11,.55),transparent);
-}
-
-.service-body{
-    padding:25px;
-}
-
-.service-number{
-    color:#ff334d;
-    font-size:11px;
-    font-weight:900;
-    margin-bottom:10px;
-}
-
-.service-body h3{
-    font-size:21px;
-    margin-bottom:10px;
-}
-
-.service-body p{
-    color:#9ca3af;
-    line-height:1.65;
-    font-size:14px;
-}
-
-.service-link{
-    display:inline-block;
-    margin-top:18px;
-    color:#fff;
-    font-size:13px;
-    font-weight:800;
-}
-
-/* ================= FEATURE ================= */
-
-.feature{
-    background:#05070b;
-}
-
-.feature-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:55px;
-    align-items:center;
-}
-
-.feature-image{
-    border-radius:30px;
-    overflow:hidden;
-    border:1px solid rgba(255,255,255,.1);
-}
-
-.feature-image img{
-    height:600px;
-    object-fit:cover;
-}
-
-.feature-content h2{
-    font-size:clamp(35px,5vw,62px);
-    line-height:1;
-    letter-spacing:-3px;
-    margin-bottom:20px;
-}
-
-.feature-content p{
-    color:#a4aab4;
-    line-height:1.8;
-}
-
-.points{
-    margin-top:30px;
-    display:grid;
-    gap:15px;
-}
-
-.point{
-    display:flex;
-    gap:14px;
-    align-items:flex-start;
-    padding:17px;
-    border:1px solid rgba(255,255,255,.07);
-    border-radius:16px;
-    background:rgba(255,255,255,.025);
-}
-
-.check{
-    width:28px;
-    height:28px;
-    border-radius:50%;
-    display:grid;
-    place-items:center;
-    background:#ff334d;
-    font-size:13px;
-    flex:none;
-}
-
-.point strong{
-    font-size:14px;
-}
-
-.point p{
-    margin-top:5px;
-    font-size:12px;
-}
-
-/* ================= EMERGENCY ================= */
-
-.emergency{
-    padding:0;
-}
-
-.emergency-box{
-    min-height:430px;
-    border-radius:30px;
-    overflow:hidden;
-    position:relative;
-    display:flex;
-    align-items:center;
-    background:
-    linear-gradient(90deg,rgba(5,7,11,.95),rgba(5,7,11,.55),rgba(5,7,11,.2)),
-    url("https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1800&q=90") center/cover;
-}
-
-.emergency-content{
-    padding:60px;
-    max-width:700px;
-}
-
-.emergency-content h2{
-    font-size:clamp(35px,5vw,65px);
-    line-height:1;
-    letter-spacing:-3px;
-    margin-bottom:20px;
-}
-
-.emergency-content p{
-    color:#d0d4db;
-    line-height:1.7;
-    margin-bottom:28px;
-}
-
-/* ================= STATS ================= */
-
-.stats{
-    background:#080b11;
-}
-
-.stats-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:15px;
-}
-
-.stat{
-    text-align:center;
-    padding:35px 15px;
-    border:1px solid rgba(255,255,255,.07);
-    border-radius:20px;
-    background:rgba(255,255,255,.025);
-}
-
-.stat h3{
-    font-size:36px;
-    font-weight:900;
-}
-
-.stat p{
-    color:#8f96a1;
-    font-size:12px;
-    margin-top:7px;
-}
-
-/* ================= ABOUT ================= */
-
-.about{
-    background:#05070b;
-}
-
-.about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:55px;
-    align-items:center;
-}
-
-.about-image{
-    position:relative;
-}
-
-.about-image img{
-    height:520px;
-    object-fit:cover;
-    border-radius:28px;
-}
-
-.about-card{
-    position:absolute;
-    bottom:25px;
-    right:25px;
-    background:rgba(5,7,11,.85);
-    backdrop-filter:blur(15px);
-    border:1px solid rgba(255,255,255,.12);
-    padding:20px;
-    border-radius:18px;
-}
-
-.about-card strong{
-    font-size:24px;
-}
-
-.about-card span{
-    display:block;
-    color:#a0a6b0;
-    font-size:11px;
-    margin-top:4px;
-}
-
-.about-content h2{
-    font-size:clamp(35px,5vw,58px);
-    line-height:1;
-    letter-spacing:-2.5px;
-    margin-bottom:20px;
-}
-
-.about-content>p{
-    color:#9da4af;
-    line-height:1.8;
-}
-
-.about-list{
-    margin-top:25px;
-    display:grid;
-    gap:12px;
-}
-
-.about-list div{
-    color:#dce0e6;
-    font-size:14px;
-}
-
-.about-list span{
-    color:#ff334d;
-    margin-right:8px;
-}
-
-/* ================= AREAS ================= */
-
-.areas{
-    background:#080b11;
-}
-
-.area-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:15px;
-}
-
-.area{
-    padding:23px;
-    border-radius:17px;
-    background:#0d1118;
-    border:1px solid rgba(255,255,255,.07);
-}
-
-.area h3{
-    font-size:15px;
-}
-
-.area p{
-    color:#858c97;
-    font-size:12px;
-    margin-top:6px;
-}
-
-/* ================= FAQ ================= */
-
-.faq{
-    background:#05070b;
-}
-
-.faq-list{
-    max-width:850px;
-    margin:auto;
-}
-
-details{
-    border-bottom:1px solid rgba(255,255,255,.1);
-    padding:22px 0;
-}
-
-summary{
-    cursor:pointer;
-    font-weight:800;
-    font-size:16px;
-}
-
-details p{
-    color:#969da8;
-    line-height:1.7;
-    padding-top:14px;
-    font-size:14px;
-}
-
-/* ================= CTA ================= */
-
-.cta{
-    padding-top:30px;
-    background:#05070b;
-}
-
-.cta-box{
-    text-align:center;
-    padding:80px 25px;
-    border-radius:30px;
-    background:
-    radial-gradient(circle at 50% 0%,rgba(255,51,77,.2),transparent 55%),
-    #0c1017;
-    border:1px solid rgba(255,255,255,.08);
-}
-
-.cta-box h2{
-    font-size:clamp(38px,6vw,70px);
-    letter-spacing:-3px;
-    line-height:1;
-}
-
-.cta-box p{
-    color:#9da4af;
-    max-width:600px;
-    margin:20px auto 28px;
-    line-height:1.7;
-}
-
-/* ================= FOOTER ================= */
-
-footer{
-    padding:60px 0 100px;
-    background:#05070b;
-}
-
-.footer-grid{
-    display:grid;
-    grid-template-columns:1.5fr 1fr 1fr;
-    gap:40px;
-    padding-bottom:40px;
-    border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.footer-brand p{
-    color:#858c97;
-    font-size:13px;
-    line-height:1.7;
-    max-width:400px;
-    margin-top:15px;
-}
-
-.footer-title{
-    font-size:12px;
-    text-transform:uppercase;
-    letter-spacing:1.5px;
-    color:#fff;
-    font-weight:900;
-    margin-bottom:15px;
-}
-
-.footer-links{
-    display:grid;
-    gap:10px;
-}
-
-.footer-links a{
-    color:#858c97;
-    font-size:13px;
-}
-
-.footer-links a:hover{
-    color:#fff;
-}
-
-.copyright{
-    color:#666d78;
-    font-size:11px;
-    padding-top:25px;
-}
-
-/* ================= WHATSAPP ================= */
-
-.whatsapp-float{
-    position:fixed;
-    right:22px;
-    bottom:22px;
-    z-index:2000;
-    width:62px;
-    height:62px;
-    border-radius:50%;
-    display:grid;
-    place-items:center;
-    background:#25D366;
-    box-shadow:0 10px 35px rgba(37,211,102,.35);
-    transition:.3s;
-}
-
-.whatsapp-float:hover{
-    transform:scale(1.08);
-}
-
-.whatsapp-float svg{
-    width:31px;
-    height:31px;
-    fill:#fff;
-}
-
-/* ================= MOBILE BAR ================= */
-
-.mobile-bar{
-    display:none;
-}
-
-@media(max-width:850px){
-
-    section{
-        padding:80px 0;
+      min-height:76px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:25px;
     }
 
-    .service-grid{
-        grid-template-columns:1fr 1fr;
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:900;
+      letter-spacing:-.5px;
+      white-space:nowrap;
     }
 
-    .feature-grid,
-    .about-grid{
-        grid-template-columns:1fr;
-        gap:35px;
+    .logo-mark{
+      width:44px;
+      height:44px;
+      border:1px solid rgba(255,255,255,.2);
+      background:linear-gradient(145deg,#202833,#080b10);
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      font-size:22px;
+      box-shadow:0 8px 30px rgba(0,0,0,.3);
     }
 
-    .feature-image img{
-        height:450px;
+    .logo span{
+      display:block;
     }
 
-    .about-image img{
-        height:450px;
+    .logo small{
+      display:block;
+      font-size:10px;
+      color:#8f99a7;
+      letter-spacing:2px;
+      margin-top:-3px;
+      text-transform:uppercase;
     }
 
-    .stats-grid{
-        grid-template-columns:1fr 1fr;
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:27px;
+      color:#b8c0cb;
+      font-size:14px;
+      font-weight:600;
     }
 
-    .area-grid{
-        grid-template-columns:1fr 1fr;
+    .nav-links a{
+      transition:.25s;
     }
 
-    .footer-grid{
-        grid-template-columns:1fr 1fr;
+    .nav-links a:hover{
+      color:#fff;
     }
-}
 
-@media(max-width:600px){
+    .nav-wa{
+      padding:12px 17px;
+      border-radius:12px;
+      background:#18221c;
+      border:1px solid rgba(37,211,102,.25);
+      color:#bff5cf;
+      font-weight:800;
+    }
+
+    .menu{
+      display:none;
+      width:44px;
+      height:44px;
+      border:1px solid var(--line);
+      border-radius:12px;
+      background:#10151c;
+      color:white;
+      cursor:pointer;
+    }
+
+    /* ================= HERO ================= */
 
     .hero{
-        min-height:800px;
-        background-position:65% center;
+      min-height:calc(100svh - 116px);
+      display:flex;
+      align-items:center;
+      position:relative;
+      isolation:isolate;
+      overflow:hidden;
+    }
+
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:-3;
+      background:
+        linear-gradient(90deg,
+          rgba(5,7,10,.97) 0%,
+          rgba(5,7,10,.86) 38%,
+          rgba(5,7,10,.42) 65%,
+          rgba(5,7,10,.65) 100%),
+        url("https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&w=2200&q=90")
+        center/cover no-repeat;
+      transform:scale(1.02);
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:-2;
+      background:linear-gradient(0deg,#07090d 0%,transparent 22%,transparent 80%,#07090d 100%);
+      pointer-events:none;
     }
 
     .hero-content{
-        padding-top:80px;
+      max-width:790px;
+      padding:100px 0 130px;
     }
 
-    .hero h1{
-        font-size:48px;
-        letter-spacing:-2.5px;
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      border:1px solid rgba(255,255,255,.13);
+      background:rgba(10,13,18,.65);
+      padding:8px 13px;
+      border-radius:999px;
+      color:#d4d9df;
+      font-size:12px;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:1.4px;
+      backdrop-filter:blur(12px);
+      margin-bottom:23px;
+    }
+
+    .eyebrow b{
+      color:#25d366;
+    }
+
+    h1{
+      font-size:clamp(44px,7vw,88px);
+      line-height:.96;
+      letter-spacing:-4px;
+      max-width:850px;
+      margin-bottom:25px;
+    }
+
+    h1 .soft{
+      color:#aeb6c1;
     }
 
     .hero p{
-        font-size:15px;
+      max-width:650px;
+      font-size:18px;
+      color:#c0c7d0;
+      line-height:1.75;
+      margin-bottom:34px;
     }
 
-    .hero-info{
-        gap:15px;
+    .actions{
+      display:flex;
+      gap:13px;
+      flex-wrap:wrap;
     }
 
     .btn{
-        width:100%;
+      min-height:54px;
+      padding:0 20px;
+      border-radius:14px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      font-weight:850;
+      border:1px solid var(--line);
+      transition:.25s;
     }
 
-    .service-grid{
-        grid-template-columns:1fr;
+    .btn:hover{
+      transform:translateY(-2px);
     }
 
-    .service-img{
-        height:260px;
+    .btn-wa{
+      background:#25d366;
+      color:#061108;
+      border-color:#25d366;
+      box-shadow:0 15px 35px rgba(37,211,102,.16);
     }
 
-    .feature-image img,
-    .about-image img{
-        height:380px;
+    .btn-dark{
+      background:rgba(10,14,19,.75);
+      color:#fff;
+      backdrop-filter:blur(12px);
     }
 
-    .emergency-box{
-        min-height:500px;
+    .hero-stats{
+      margin-top:55px;
+      display:flex;
+      gap:35px;
+      flex-wrap:wrap;
     }
 
-    .emergency-content{
-        padding:30px;
+    .hero-stat strong{
+      display:block;
+      font-size:27px;
+    }
+
+    .hero-stat span{
+      color:#8e98a6;
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:1px;
+    }
+
+    /* ================= FLOATING TRUCK CARD ================= */
+
+    .truck-card{
+      position:absolute;
+      right:5%;
+      bottom:8%;
+      width:min(370px,32vw);
+      background:rgba(9,12,17,.75);
+      border:1px solid rgba(255,255,255,.13);
+      border-radius:24px;
+      overflow:hidden;
+      backdrop-filter:blur(16px);
+      box-shadow:0 30px 80px rgba(0,0,0,.5);
+    }
+
+    .truck-card img{
+      height:190px;
+      object-fit:cover;
+    }
+
+    .truck-card-info{
+      padding:17px;
+    }
+
+    .truck-card-info strong{
+      display:block;
+      margin-bottom:4px;
+    }
+
+    .truck-card-info span{
+      color:#919ba8;
+      font-size:13px;
+    }
+
+    /* ================= TRUST STRIP ================= */
+
+    .trust{
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+      background:#090c11;
+    }
+
+    .trust-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+    }
+
+    .trust-item{
+      min-height:95px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:13px;
+      border-right:1px solid var(--line);
+      color:#aab2bd;
+      font-weight:700;
+      font-size:14px;
+    }
+
+    .trust-item:last-child{
+      border-right:0;
+    }
+
+    .trust-icon{
+      width:38px;
+      height:38px;
+      border-radius:11px;
+      background:#151b23;
+      display:grid;
+      place-items:center;
+      font-size:18px;
+    }
+
+    /* ================= GENERAL SECTIONS ================= */
+
+    section{
+      position:relative;
+    }
+
+    .section{
+      padding:110px 0;
+    }
+
+    .section-head{
+      display:flex;
+      justify-content:space-between;
+      align-items:end;
+      gap:30px;
+      margin-bottom:42px;
+    }
+
+    .section-kicker{
+      color:#7f8996;
+      text-transform:uppercase;
+      letter-spacing:2px;
+      font-size:11px;
+      font-weight:900;
+      margin-bottom:10px;
+    }
+
+    h2{
+      font-size:clamp(34px,5vw,58px);
+      line-height:1;
+      letter-spacing:-2.5px;
+    }
+
+    .section-head p{
+      max-width:480px;
+      color:#929ca9;
+      line-height:1.7;
+    }
+
+    /* ================= SERVICE GRID ================= */
+
+    .services-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:14px;
+    }
+
+    .service{
+      background:linear-gradient(145deg,#121821,#0c1016);
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:25px;
+      min-height:220px;
+      transition:.3s;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .service::before{
+      content:"";
+      position:absolute;
+      width:140px;
+      height:140px;
+      border-radius:50%;
+      background:rgba(255,255,255,.035);
+      top:-60px;
+      right:-50px;
+    }
+
+    .service:hover{
+      transform:translateY(-5px);
+      border-color:rgba(255,255,255,.18);
+    }
+
+    .service-icon{
+      width:50px;
+      height:50px;
+      border-radius:15px;
+      background:#1a212b;
+      display:grid;
+      place-items:center;
+      font-size:24px;
+      margin-bottom:24px;
+    }
+
+    .service h3{
+      font-size:17px;
+      margin-bottom:8px;
+    }
+
+    .service p{
+      color:#87919e;
+      font-size:13px;
+      line-height:1.65;
+    }
+
+    /* ================= FEATURE BAND ================= */
+
+    .feature-band{
+      padding:0 0 110px;
+    }
+
+    .feature-box{
+      border:1px solid var(--line);
+      border-radius:30px;
+      overflow:hidden;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      background:#0d1219;
+    }
+
+    .feature-image{
+      min-height:500px;
+      background:url("https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1400&q=85") center/cover;
+    }
+
+    .feature-content{
+      padding:65px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+
+    .feature-content h2{
+      margin-bottom:20px;
+    }
+
+    .feature-content > p{
+      color:#919ba8;
+      margin-bottom:28px;
+    }
+
+    .check-list{
+      display:grid;
+      gap:13px;
+    }
+
+    .check{
+      display:flex;
+      align-items:flex-start;
+      gap:12px;
+      color:#c8ced6;
+      font-size:14px;
+    }
+
+    .check i{
+      font-style:normal;
+      color:#25d366;
+      font-weight:900;
+    }
+
+    /* ================= STATS ================= */
+
+    .stats{
+      background:#090c11;
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
     }
 
     .stats-grid{
-        grid-template-columns:1fr 1fr;
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
     }
 
-    .stat h3{
-        font-size:29px;
+    .stat{
+      padding:60px 25px;
+      text-align:center;
+      border-right:1px solid var(--line);
     }
 
-    .area-grid{
-        grid-template-columns:1fr;
+    .stat:last-child{
+      border:0;
+    }
+
+    .stat strong{
+      display:block;
+      font-size:47px;
+      letter-spacing:-2px;
+    }
+
+    .stat span{
+      color:#818b98;
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:1.5px;
+    }
+
+    /* ================= PROCESS ================= */
+
+    .process-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:14px;
+    }
+
+    .process{
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:27px;
+      background:#0c1118;
+    }
+
+    .number{
+      font-size:12px;
+      color:#6f7986;
+      margin-bottom:35px;
+      font-weight:900;
+    }
+
+    .process h3{
+      margin-bottom:9px;
+    }
+
+    .process p{
+      color:#818b98;
+      font-size:13px;
+    }
+
+    /* ================= GALLERY ================= */
+
+    .gallery{
+      display:grid;
+      grid-template-columns:1.4fr 1fr 1fr;
+      grid-auto-rows:250px;
+      gap:12px;
+    }
+
+    .gallery-item{
+      border-radius:20px;
+      overflow:hidden;
+      position:relative;
+      border:1px solid var(--line);
+      background:#111;
+    }
+
+    .gallery-item.large{
+      grid-row:span 2;
+    }
+
+    .gallery-item img{
+      height:100%;
+      object-fit:cover;
+      transition:.5s;
+    }
+
+    .gallery-item:hover img{
+      transform:scale(1.06);
+    }
+
+    .gallery-caption{
+      position:absolute;
+      left:14px;
+      right:14px;
+      bottom:14px;
+      padding:12px 14px;
+      border-radius:13px;
+      background:rgba(4,6,9,.75);
+      backdrop-filter:blur(10px);
+      border:1px solid rgba(255,255,255,.1);
+      font-size:12px;
+      font-weight:800;
+    }
+
+    /* ================= VEHICLES ================= */
+
+    .vehicle-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:15px;
+    }
+
+    .vehicle{
+      min-height:360px;
+      border:1px solid var(--line);
+      border-radius:23px;
+      overflow:hidden;
+      position:relative;
+      background:#0e131a;
+    }
+
+    .vehicle img{
+      height:230px;
+      object-fit:cover;
+    }
+
+    .vehicle-info{
+      padding:20px;
+    }
+
+    .vehicle-info h3{
+      margin-bottom:5px;
+    }
+
+    .vehicle-info p{
+      color:#808a97;
+      font-size:13px;
+    }
+
+    /* ================= AREAS ================= */
+
+    .areas{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:10px;
+    }
+
+    .area{
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:17px;
+      background:#0c1117;
+      color:#aeb6c1;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-size:14px;
+      font-weight:650;
+    }
+
+    .area span{
+      color:#777;
+    }
+
+    /* ================= REVIEWS ================= */
+
+    .reviews{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:15px;
+    }
+
+    .review{
+      padding:28px;
+      border:1px solid var(--line);
+      border-radius:20px;
+      background:linear-gradient(145deg,#111720,#0b0f15);
+    }
+
+    .stars{
+      letter-spacing:3px;
+      margin-bottom:20px;
+      color:#d9b86c;
+    }
+
+    .review p{
+      color:#b4bcc6;
+      line-height:1.75;
+      font-size:14px;
+      margin-bottom:22px;
+    }
+
+    .review strong{
+      font-size:13px;
+    }
+
+    .review small{
+      display:block;
+      color:#6e7885;
+      margin-top:3px;
+    }
+
+    /* ================= FAQ ================= */
+
+    .faq{
+      max-width:900px;
+      margin:auto;
+    }
+
+    details{
+      border-bottom:1px solid var(--line);
+      padding:23px 0;
+    }
+
+    summary{
+      cursor:pointer;
+      list-style:none;
+      font-weight:750;
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+    }
+
+    summary::-webkit-details-marker{
+      display:none;
+    }
+
+    summary::after{
+      content:"+";
+      color:#7f8995;
+      font-size:22px;
+    }
+
+    details[open] summary::after{
+      content:"−";
+    }
+
+    details p{
+      color:#818b98;
+      padding:16px 35px 0 0;
+      font-size:14px;
+      line-height:1.8;
+    }
+
+    /* ================= CTA ================= */
+
+    .cta{
+      padding:100px 0;
+    }
+
+    .cta-box{
+      border:1px solid rgba(37,211,102,.18);
+      background:
+        radial-gradient(circle at 80% 20%,rgba(37,211,102,.09),transparent 30%),
+        linear-gradient(145deg,#101820,#0b1016);
+      border-radius:30px;
+      padding:70px;
+      text-align:center;
+    }
+
+    .cta-box h2{
+      max-width:800px;
+      margin:0 auto 18px;
+    }
+
+    .cta-box p{
+      max-width:600px;
+      margin:0 auto 30px;
+      color:#89939f;
+    }
+
+    .cta-phone{
+      display:block;
+      margin-top:18px;
+      color:#687380;
+      font-size:13px;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer{
+      border-top:1px solid var(--line);
+      background:#05070a;
+      padding:70px 0 105px;
     }
 
     .footer-grid{
-        grid-template-columns:1fr;
+      display:grid;
+      grid-template-columns:1.5fr 1fr 1fr 1fr;
+      gap:40px;
     }
 
-    .whatsapp-float{
-        display:none;
+    .footer-brand p{
+      color:#747e8a;
+      font-size:13px;
+      max-width:360px;
+      margin-top:18px;
+      line-height:1.8;
     }
 
-    .mobile-bar{
-        display:grid;
-        grid-template-columns:1fr;
-        position:fixed;
-        bottom:0;
-        left:0;
-        width:100%;
-        padding:10px;
-        background:rgba(5,7,11,.94);
-        backdrop-filter:blur(15px);
-        z-index:1500;
-        border-top:1px solid rgba(255,255,255,.1);
+    footer h4{
+      margin-bottom:18px;
+      font-size:13px;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      color:#d9dee4;
     }
+
+    footer ul{
+      list-style:none;
+      display:grid;
+      gap:10px;
+    }
+
+    footer li,
+    footer li a{
+      color:#737d89;
+      font-size:13px;
+    }
+
+    .copyright{
+      border-top:1px solid var(--line);
+      margin-top:50px;
+      padding-top:25px;
+      color:#59636f;
+      font-size:12px;
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+    }
+
+    /* ================= MOBILE WHATSAPP ================= */
 
     .mobile-wa{
-        background:#25D366;
-        color:#fff;
-        height:52px;
+      display:none;
+      position:fixed;
+      z-index:2000;
+      left:12px;
+      right:12px;
+      bottom:12px;
+      min-height:58px;
+      border-radius:17px;
+      background:#25d366;
+      color:#061108;
+      box-shadow:0 15px 45px rgba(0,0,0,.55);
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      font-weight:900;
+    }
+
+    /* ================= REVEAL ================= */
+
+    .reveal{
+      opacity:0;
+      transform:translateY(22px);
+      transition:opacity .7s ease,transform .7s ease;
+    }
+
+    .reveal.visible{
+      opacity:1;
+      transform:none;
+    }
+
+    /* ================= RESPONSIVE ================= */
+
+    @media(max-width:1050px){
+      .nav-links{
+        gap:15px;
+      }
+
+      .truck-card{
+        opacity:.45;
+        right:2%;
+      }
+
+      .services-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .process-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+    }
+
+    @media(max-width:800px){
+      .topbar{
+        display:none;
+      }
+
+      header{
+        top:0;
+      }
+
+      .nav{
+        min-height:68px;
+      }
+
+      .nav-links{
+        position:absolute;
+        top:68px;
+        left:0;
+        right:0;
+        display:none;
+        padding:15px 4%;
+        background:#090c11;
+        border-bottom:1px solid var(--line);
+        flex-direction:column;
+        align-items:stretch;
+      }
+
+      .nav-links.active{
         display:flex;
-        align-items:center;
-        justify-content:center;
-        border-radius:14px;
-        font-weight:900;
-        font-size:14px;
-    }
+      }
 
-    footer{
+      .nav-links a{
+        padding:12px 5px;
+      }
+
+      .nav-wa{
+        text-align:center;
+      }
+
+      .menu{
+        display:block;
+      }
+
+      .hero{
+        min-height:calc(100svh - 68px);
+      }
+
+      .hero::before{
+        background:
+          linear-gradient(0deg,
+            rgba(5,7,10,.98) 5%,
+            rgba(5,7,10,.7) 48%,
+            rgba(5,7,10,.58) 100%),
+          url("https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&w=1800&q=88")
+          center/cover no-repeat;
+      }
+
+      .hero-content{
+        padding:90px 0 100px;
+      }
+
+      h1{
+        font-size:clamp(44px,14vw,70px);
+        letter-spacing:-3px;
+      }
+
+      .hero p{
+        font-size:16px;
+      }
+
+      .truck-card{
+        display:none;
+      }
+
+      .trust-grid{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .trust-item{
+        min-height:80px;
+        border-bottom:1px solid var(--line);
+      }
+
+      .section{
+        padding:75px 0;
+      }
+
+      .section-head{
+        display:block;
+      }
+
+      .section-head p{
+        margin-top:17px;
+      }
+
+      .services-grid,
+      .vehicle-grid,
+      .reviews{
+        grid-template-columns:1fr;
+      }
+
+      .feature-box{
+        grid-template-columns:1fr;
+      }
+
+      .feature-image{
+        min-height:300px;
+      }
+
+      .feature-content{
+        padding:38px 25px;
+      }
+
+      .stats-grid{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .stat{
+        padding:40px 15px;
+        border-bottom:1px solid var(--line);
+      }
+
+      .stat:nth-child(2){
+        border-right:0;
+      }
+
+      .gallery{
+        grid-template-columns:1fr 1fr;
+        grid-auto-rows:190px;
+      }
+
+      .gallery-item.large{
+        grid-row:span 2;
+      }
+
+      .areas{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .cta-box{
+        padding:45px 22px;
+      }
+
+      .footer-grid{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .copyright{
+        display:block;
+      }
+
+      .copyright span{
+        display:block;
+        margin-top:8px;
+      }
+
+      .mobile-wa{
+        display:flex;
+      }
+
+      footer{
         padding-bottom:100px;
+      }
     }
-}
 
-</style>
+    @media(max-width:480px){
+      .container{
+        width:90%;
+      }
+
+      .logo-mark{
+        width:40px;
+        height:40px;
+      }
+
+      .logo{
+        font-size:14px;
+      }
+
+      .actions{
+        display:grid;
+        grid-template-columns:1fr;
+      }
+
+      .btn{
+        width:100%;
+      }
+
+      .hero-stats{
+        gap:23px;
+      }
+
+      .hero-stat strong{
+        font-size:23px;
+      }
+
+      .trust-grid{
+        grid-template-columns:1fr;
+      }
+
+      .trust-item{
+        justify-content:flex-start;
+        padding-left:20px;
+        border-right:0;
+      }
+
+      .process-grid{
+        grid-template-columns:1fr;
+      }
+
+      .gallery{
+        grid-template-columns:1fr;
+        grid-auto-rows:240px;
+      }
+
+      .gallery-item.large{
+        grid-row:span 1;
+      }
+
+      .areas{
+        grid-template-columns:1fr;
+      }
+
+      .footer-grid{
+        grid-template-columns:1fr;
+      }
+
+      h2{
+        letter-spacing:-1.5px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
-
-<header>
-<div class="container nav">
-
-<a href="#" class="logo">
-Al Ain <span>Recovery</span>
-</a>
-
-<nav class="nav-links">
-<a href="#services">Services</a>
-<a href="#about">About</a>
-<a href="#areas">Areas</a>
-<a href="#faq">FAQ</a>
-<a href="https://wa.me/971551525352" class="nav-btn">WhatsApp</a>
-</nav>
-
-</div>
-</header>
-
-
-<!-- ================= HERO ================= -->
-
-<section class="hero">
-
-<div class="container hero-content">
-
-<div class="badge">
-<span class="dot"></span>
-Available 24/7 in Al Ain
-</div>
-
-<h1>
-Fast.<br>
-Professional.<br>
-<span>Recovery.</span>
-</h1>
-
-<p>
-24/7 vehicle recovery and towing service in Al Ain, UAE.
-From emergency breakdowns to luxury and sports car recovery,
-we help get your vehicle safely back on the road.
-</p>
-
-<div class="hero-buttons">
-
-<a class="btn btn-red"
-href="https://wa.me/971551525352?text=Hello%20Al%20Ain%20Recovery%2C%20I%20need%20vehicle%20recovery.">
-💬 WhatsApp Us
-</a>
-
-<a class="btn btn-white"
-href="#services">
-View Services
-</a>
-
-</div>
-
-<div class="hero-info">
-
-<div>
-<strong>24/7</strong>
-Emergency Support
-</div>
-
-<div>
-<strong>Al Ain</strong>
-UAE Coverage
-</div>
-
-<div>
-<strong>0551525352</strong>
-WhatsApp
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= SERVICES ================= -->
-
-<section class="services" id="services">
-
-<div class="container">
-
-<div class="section-top">
-
-<div class="eyebrow">What We Do</div>
-
-<h2 class="section-title">
-Professional Vehicle Recovery Services
-</h2>
-
-<p class="section-text">
-Reliable roadside assistance and vehicle recovery whenever you need it.
-</p>
-
-</div>
-
-
-<div class="service-grid">
-
-
-<div class="service-card">
-
-<div class="service-img">
-<img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1200&q=85" alt="Car Recovery Al Ain">
-</div>
-
-<div class="service-body">
-<div class="service-number">01 / RECOVERY</div>
-<h3>Car Recovery</h3>
-<p>Professional vehicle recovery for cars that have broken down or cannot continue driving.</p>
-<a class="service-link" href="https://wa.me/971551525352">Request Recovery →</a>
-</div>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-img">
-<img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=85" alt="Sports Car Recovery">
-</div>
-
-<div class="service-body">
-<div class="service-number">02 / SPECIALIST</div>
-<h3>Sports Car Recovery</h3>
-<p>Careful recovery solutions for sports, premium and luxury vehicles.</p>
-<a class="service-link" href="https://wa.me/971551525352">Request Recovery →</a>
-</div>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-img">
-<img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=85" alt="Emergency Towing">
-</div>
-
-<div class="service-body">
-<div class="service-number">03 / EMERGENCY</div>
-<h3>Emergency Towing</h3>
-<p>Fast emergency towing assistance when your vehicle needs immediate transport.</p>
-<a class="service-link" href="https://wa.me/971551525352">Get Help →</a>
-</div>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-img">
-<img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=1200&q=85" alt="Flatbed Recovery">
-</div>
-
-<div class="service-body">
-<div class="service-number">04 / TRANSPORT</div>
-<h3>Flatbed Recovery</h3>
-<p>Safe vehicle transportation using professional flatbed recovery equipment.</p>
-<a class="service-link" href="https://wa.me/971551525352">Request Flatbed →</a>
-</div>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-img">
-<img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=1200&q=85" alt="Battery Boost">
-</div>
-
-<div class="service-body">
-<div class="service-number">05 / ROADSIDE</div>
-<h3>Battery Boost</h3>
-<p>Battery jump-start assistance for vehicles that will not start.</p>
-<a class="service-link" href="https://wa.me/971551525352">Get Assistance →</a>
-</div>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-img">
-<img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1200&q=85" alt="Tyre Assistance">
-</div>
-
-<div class="service-body">
-<div class="service-number">06 / ROADSIDE</div>
-<h3>Flat Tyre Assistance</h3>
-<p>Roadside tyre assistance when you are stuck with a flat or damaged tyre.</p>
-<a class="service-link" href="https://wa.me/971551525352">Get Assistance →</a>
-</div>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-img">
-<img src="https://images.unsplash.com/photo-1621932953986-30d9b2a5d4c4?auto=format&fit=crop&w=1200&q=85" alt="Fuel Delivery">
-</div>
-
-<div class="service-body">
-<div class="service-number">07 / ROADSIDE</div>
-<h3>Fuel Delivery</h3>
-<p>Emergency fuel assistance if your vehicle runs out of fuel on the road.</p>
-<a class="service-link" href="https://wa.me/971551525352">Request Fuel →</a>
-</div>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-img">
-<img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=1200&q=85" alt="Breakdown Recovery">
-</div>
-
-<div class="service-body">
-<div class="service-number">08 / BREAKDOWN</div>
-<h3>Breakdown Recovery</h3>
-<p>Vehicle recovery for unexpected mechanical or electrical breakdowns.</p>
-<a class="service-link" href="https://wa.me/971551525352">Get Help →</a>
-</div>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-img">
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85" alt="Luxury Vehicle Transport">
-</div>
-
-<div class="service-body">
-<div class="service-number">09 / PREMIUM</div>
-<h3>Luxury Vehicle Transport</h3>
-<p>Careful transportation solutions for premium and valuable vehicles.</p>
-<a class="service-link" href="https://wa.me/971551525352">Book Transport →</a>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= FEATURE ================= -->
-
-<section class="feature">
-
-<div class="container feature-grid">
-
-<div class="feature-image">
-
-<img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1500&q=90" alt="Professional Vehicle Recovery">
-
-</div>
-
-<div class="feature-content">
-
-<div class="eyebrow">Why Choose Us</div>
-
-<h2>Recovery you can rely on.</h2>
-
-<p>
-When your vehicle stops unexpectedly, you need a team that responds quickly
-and handles your vehicle carefully. Al Ain Recovery provides professional
-roadside and towing support throughout Al Ain.
-</p>
-
-<div class="points">
-
-<div class="point">
-<div class="check">✓</div>
-<div>
-<strong>Available 24/7</strong>
-<p>Emergency recovery support whenever you need help.</p>
-</div>
-</div>
-
-<div class="point">
-<div class="check">✓</div>
-<div>
-<strong>Professional Vehicle Handling</strong>
-<p>We focus on safe and careful vehicle transportation.</p>
-</div>
-</div>
-
-<div class="point">
-<div class="check">✓</div>
-<div>
-<strong>Al Ain Based Service</strong>
-<p>Focused on customers and roads throughout Al Ain.</p>
-</div>
-</div>
-
-<div class="point">
-<div class="check">✓</div>
-<div>
-<strong>Easy WhatsApp Booking</strong>
-<p>Send your location and vehicle details directly on WhatsApp.</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= EMERGENCY ================= -->
-
-<section class="emergency">
-
-<div class="container">
-
-<div class="emergency-box">
-
-<div class="emergency-content">
-
-<div class="eyebrow">Need Help Now?</div>
-
-<h2>Your vehicle stops.<br>We respond.</h2>
-
-<p>
-Don't stay stranded. Contact Al Ain Recovery on WhatsApp and send
-your location. Our team can assist with vehicle recovery and roadside support.
-</p>
-
-<a class="btn btn-red"
-href="https://wa.me/971551525352?text=Emergency%20Recovery%20Request">
-💬 WhatsApp 0551525352
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= STATS ================= -->
-
-<section class="stats">
-
-<div class="container">
-
-<div class="stats-grid">
-
-<div class="stat">
-<h3>24/7</h3>
-<p>Emergency Availability</p>
-</div>
-
-<div class="stat">
-<h3>Al Ain</h3>
-<p>Service Area</p>
-</div>
-
-<div class="stat">
-<h3>9+</h3>
-<p>Recovery Services</p>
-</div>
-
-<div class="stat">
-<h3>Fast</h3>
-<p>Response Focus</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= ABOUT ================= -->
-
-<section class="about" id="about">
-
-<div class="container about-grid">
-
-<div class="about-image">
-
-<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1500&q=90" alt="Al Ain Recovery">
-
-<div class="about-card">
-<strong>24/7</strong>
-<span>Recovery Support</span>
-</div>
-
-</div>
-
-<div class="about-content">
-
-<div class="eyebrow">Al Ain Recovery</div>
-
-<h2>More than towing.</h2>
-
-<p>
-We provide practical roadside and vehicle recovery solutions for drivers
-in Al Ain. Whether you have a breakdown, flat tyre, battery issue,
-empty fuel tank or need your vehicle transported, we're ready to help.
-</p>
-
-<div class="about-list">
-
-<div><span>✓</span> Emergency vehicle recovery</div>
-<div><span>✓</span> Breakdown assistance</div>
-<div><span>✓</span> Flatbed vehicle transport</div>
-<div><span>✓</span> Sports & luxury vehicle handling</div>
-<div><span>✓</span> Battery and tyre roadside assistance</div>
-<div><span>✓</span> Fuel delivery assistance</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= AREAS ================= -->
-
-<section class="areas" id="areas">
-
-<div class="container">
-
-<div class="section-top">
-
-<div class="eyebrow">Service Area</div>
-
-<h2 class="section-title">Serving Al Ain, UAE</h2>
-
-<p class="section-text">
-Our recovery service is focused on Al Ain and surrounding areas.
-</p>
-
-</div>
-
-<div class="area-grid">
-
-<div class="area">
-<h3>Al Ain City</h3>
-<p>24/7 vehicle recovery assistance</p>
-</div>
-
-<div class="area">
-<h3>Al Meryal</h3>
-<p>Local recovery and towing support</p>
-</div>
-
-<div class="area">
-<h3>Al Khabeesi</h3>
-<p>Roadside assistance available</p>
-</div>
-
-<div class="area">
-<h3>Central Al Ain</h3>
-<p>Emergency vehicle recovery</p>
-</div>
-
-<div class="area">
-<h3>Industrial Areas</h3>
-<p>Vehicle transport and towing</p>
-</div>
-
-<div class="area">
-<h3>Al Ain Roads</h3>
-<p>Emergency roadside support</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= FAQ ================= -->
-
-<section class="faq" id="faq">
-
-<div class="container">
-
-<div class="section-top">
-
-<div class="eyebrow">FAQ</div>
-
-<h2 class="section-title">Common Questions</h2>
-
-</div>
-
-<div class="faq-list">
-
-<details>
-<summary>Are you available 24/7?</summary>
-<p>
-Yes. Al Ain Recovery provides emergency vehicle recovery assistance around the clock.
-</p>
-</details>
-
-<details>
-<summary>Which area do you cover?</summary>
-<p>
-Our main service area is Al Ain, UAE, including local roads and surrounding Al Ain areas.
-</p>
-</details>
-
-<details>
-<summary>Can you recover sports and luxury cars?</summary>
-<p>
-Yes. We provide careful recovery and transportation solutions for premium,
-sports and luxury vehicles.
-</p>
-</details>
-
-<details>
-<summary>How can I request recovery?</summary>
-<p>
-Contact us through WhatsApp at 0551525352 and send your location,
-vehicle type and the problem you're facing.
-</p>
-</details>
-
-<details>
-<summary>Do you provide battery and tyre assistance?</summary>
-<p>
-Yes. Battery boost and flat tyre roadside assistance are among our services.
-</p>
-</details>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= CTA ================= -->
-
-<section class="cta">
-
-<div class="container">
-
-<div class="cta-box">
-
-<div class="eyebrow">24/7 Emergency Support</div>
-
-<h2>Need recovery?<br>Message us now.</h2>
-
-<p>
-Send your location and vehicle details on WhatsApp.
-We'll help you with the next step.
-</p>
-
-<a class="btn btn-red"
-href="https://wa.me/971551525352?text=Hello%20Al%20Ain%20Recovery%2C%20I%20need%20help.">
-💬 WhatsApp Al Ain Recovery
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-<div class="container">
-
-<div class="footer-grid">
-
-<div class="footer-brand">
-
-<div class="logo">
-Al Ain <span>Recovery</span>
-</div>
-
-<p>
-24/7 vehicle recovery and towing assistance in Al Ain, UAE.
-Professional support for breakdowns, emergencies and vehicle transportation.
-</p>
-
-</div>
-
-<div>
-
-<div class="footer-title">Services</div>
-
-<div class="footer-links">
-<a href="#services">Car Recovery</a>
-<a href="#services">Emergency Towing</a>
-<a href="#services">Flatbed Recovery</a>
-<a href="#services">Sports Car Recovery</a>
-<a href="#services">Roadside Assistance</a>
-</div>
-
-</div>
-
-<div>
-
-<div class="footer-title">Contact</div>
-
-<div class="footer-links">
-<a href="https://wa.me/971551525352">WhatsApp: 0551525352</a>
-<a href="#areas">Al Ain, UAE</a>
-<a href="#faq">FAQ</a>
-</div>
-
-</div>
-
-</div>
-
-<div class="copyright">
-© 2026 Al Ain Recovery. All rights reserved.
-</div>
-
-</div>
-
-</footer>
-
-
-<!-- ================= FLOATING WHATSAPP ================= -->
-
-<a class="whatsapp-float"
-href="https://wa.me/971551525352?text=Hello%20Al%20Ain%20Recovery%2C%20I%20need%20vehicle%20recovery."
-aria-label="WhatsApp Al Ain Recovery">
-
-<svg viewBox="0 0 32 32">
-<path d="M19.11 17.44c-.28-.14-1.65-.81-1.9-.9-.25-.09-.44-.14-.63.14-.18.28-.72.9-.88 1.09-.16.18-.32.21-.6.07-.28-.14-1.17-.43-2.23-1.37-.82-.73-1.37-1.63-1.53-1.9-.16-.28-.02-.43.12-.57.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.09-.18.05-.35-.02-.49-.07-.14-.63-1.52-.86-2.08-.23-.55-.46-.47-.63-.48h-.54c-.18 0-.48.07-.74.35-.25.28-.97.95-.97 2.3s.99 2.67 1.13 2.85c.14.18 1.94 2.96 4.7 4.15.66.28 1.17.45 1.57.58.66.21 1.26.18 1.73.11.53-.08 1.65-.67 1.88-1.31.23-.64.23-1.19.16-1.31-.07-.12-.25-.18-.53-.32zM16.02 4.2c-6.51 0-11.8 5.29-11.8 11.8 0 2.08.54 4.03 1.49 5.73L4.1 27.4l5.82-1.53a11.75 11.75 0 0 0 6.1 1.7c6.51 0 11.8-5.29 11.8-11.8S22.53 4.2 16.02 4.2zm0 21.42c-1.97 0-3.8-.53-5.38-1.45l-.39-.23-3.45.91.92-3.36-.25-.4a9.57 9.57 0 1 1 8.55 4.53z"/>
-</svg>
-
-</a>
-
-
-<!-- ================= MOBILE WHATSAPP BAR ================= -->
-
-<div class="mobile-bar">
-
-<a class="mobile-wa"
-href="https://wa.me/971551525352?text=Hello%20Al%20Ain%20Recovery%2C%20I%20need%20vehicle%20recovery.">
-
-💬 WhatsApp Al Ain Recovery — 0551525352
-
-</a>
-
-</div>
-
-
-<script>
-
-/* Smooth reveal animation */
-
-const cards = document.querySelectorAll(
-".service-card,.stat,.area,.point,.about-image,.feature-image,.cta-box"
-);
-
-const observer = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-        if(entry.isIntersecting){
-            entry.target.style.opacity="1";
-            entry.target.style.transform="translateY(0)";
-        }
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <span class="status"><i class="dot"></i> Available 24/7</span>
+        <span>📍 Al Ain, United Arab Emirates</span>
+      </div>
+      <div class="topbar-right">
+        <span>Emergency Recovery</span>
+        <span>WhatsApp: 0551525352</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <header>
+    <div class="container nav">
+      <a class="logo" href="#home">
+        <div class="logo-mark">🚛</div>
+        <div>
+          <span>Al Ain Recovery</span>
+          <small>24/7 Vehicle Recovery</small>
+        </div>
+      </a>
+
+      <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#fleet">Recovery</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#areas">Areas</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-wa" href="https://wa.me/971551525352?text=Hello%20Al%20Ain%20Recovery%2C%20I%20need%20vehicle%20recovery." target="_blank" rel="noopener">
+          WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content reveal">
+          <div class="eyebrow">
+            <b>●</b> 24/7 Emergency Vehicle Recovery
+          </div>
+
+          <h1>
+            Your road.
+            <span class="soft">Our recovery.</span>
+          </h1>
+
+          <p>
+            Professional tow truck and vehicle recovery service in Al Ain, UAE.
+            From everyday breakdowns to luxury and sports car recovery,
+            we're ready around the clock.
+          </p>
+
+          <div class="actions">
+            <a class="btn btn-wa" href="https://wa.me/971551525352?text=Hello%20Al%20Ain%20Recovery%2C%20I%20need%20emergency%20recovery." target="_blank" rel="noopener">
+              💬 WhatsApp 0551525352
+            </a>
+
+            <a class="btn btn-dark" href="#services">
+              View Recovery Services →
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong>24/7</strong>
+              <span>Emergency</span>
+            </div>
+
+            <div class="hero-stat">
+              <strong>Al Ain</strong>
+              <span>Service Area</span>
+            </div>
+
+            <div class="hero-stat">
+              <strong>Fast</strong>
+              <span>Response</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="truck-card reveal">
+        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=900&q=85" alt="Professional vehicle recovery truck">
+        <div class="truck-card-info">
+          <strong>Professional Recovery Fleet</strong>
+          <span>Ready for cars, SUVs, 4x4s and specialist vehicles.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="trust">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <span class="trust-icon">🚨</span>
+          24/7 Emergency
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">🚛</span>
+          Professional Tow Trucks
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">📍</span>
+          Al Ain Coverage
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">💬</span>
+          WhatsApp Booking
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="section-kicker">01 / Services</div>
+            <h2>Recovery for<br>every situation.</h2>
+          </div>
+          <p>
+            Whether your vehicle has broken down, been involved in an accident,
+            or simply needs safe transportation, our recovery service is ready.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service reveal">
+            <div class="service-icon">🚗</div>
+            <h3>Car Recovery</h3>
+            <p>Reliable recovery for everyday cars and passenger vehicles across Al Ain.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service-icon">🚛</div>
+            <h3>Tow Truck</h3>
+            <p>Professional towing equipment for safe loading, towing and transport.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service-icon">🛻</div>
+            <h3>Flatbed Recovery</h3>
+            <p>Secure flatbed transport for vehicles that require careful handling.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service-icon">🏎️</div>
+            <h3>Sports Car Recovery</h3>
+            <p>Careful recovery solutions for performance and specialist vehicles.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service-icon">💎</div>
+            <h3>Luxury Vehicle Recovery</h3>
+            <p>Extra-care transport for premium and high-value vehicles.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service-icon">🚙</div>
+            <h3>SUV & 4x4 Recovery</h3>
+            <p>Recovery assistance for SUVs, 4x4 vehicles and larger passenger cars.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service-icon">🚨</div>
+            <h3>Emergency Recovery</h3>
+            <p>24/7 emergency response when your vehicle cannot continue safely.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service-icon">💥</div>
+            <h3>Accident Recovery</h3>
+            <p>Vehicle recovery after road incidents and breakdown-related accidents.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service-icon">⚙️</div>
+            <h3>Breakdown Recovery</h3>
+            <p>Get your immobilised vehicle moved safely from the roadside.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service-icon">🔋</div>
+            <h3>Battery Boost</h3>
+            <p>Roadside battery assistance when your vehicle won't start.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service-icon">🛞</div>
+            <h3>Tyre Assistance</h3>
+            <p>Help when a flat or damaged tyre leaves you stranded.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service-icon">⛽</div>
+            <h3>Fuel Delivery</h3>
+            <p>Emergency fuel assistance to help you get moving again.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service-icon">🏗️</div>
+            <h3>Vehicle Transport</h3>
+            <p>Safe vehicle transportation between locations in and around Al Ain.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service-icon">🅿️</div>
+            <h3>Parking Recovery</h3>
+            <p>Vehicle movement and recovery from difficult parking situations.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service-icon">🌙</div>
+            <h3>Night Recovery</h3>
+            <p>Emergency recovery assistance remains available through the night.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service-icon">🛣️</div>
+            <h3>Roadside Assistance</h3>
+            <p>Practical roadside support when your journey suddenly stops.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE -->
+    <section class="feature-band">
+      <div class="container">
+        <div class="feature-box reveal">
+          <div class="feature-image"></div>
+
+          <div class="feature-content">
+            <div class="section-kicker">02 / Professional Recovery</div>
+            <h2>Built for the moment you need help most.</h2>
+            <p>
+              Our focus is simple: safe vehicle handling, fast communication
+              and dependable recovery support in Al Ain.
+            </p>
+
+            <div class="check-list">
+              <div class="check"><i>✓</i> 24/7 emergency availability</div>
+              <div class="check"><i>✓</i> Professional towing equipment</div>
+              <div class="check"><i>✓</i> Careful vehicle loading</div>
+              <div class="check"><i>✓</i> Sports & luxury vehicle handling</div>
+              <div class="check"><i>✓</i> WhatsApp communication</div>
+              <div class="check"><i>✓</i> Al Ain focused service</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat reveal">
+          <strong>24/7</strong>
+          <span>Availability</span>
+        </div>
+        <div class="stat reveal">
+          <strong>16+</strong>
+          <span>Recovery Services</span>
+        </div>
+        <div class="stat reveal">
+          <strong>100%</strong>
+          <span>Safety Focus</span>
+        </div>
+        <div class="stat reveal">
+          <strong>Al Ain</strong>
+          <span>Core Coverage</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="section-kicker">03 / How It Works</div>
+            <h2>Simple from<br>start to finish.</h2>
+          </div>
+          <p>
+            Contact us on WhatsApp, share your location and vehicle details,
+            and we'll guide you through the recovery process.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process reveal">
+            <div class="number">01 — CONTACT</div>
+            <h3>Message us</h3>
+            <p>Send a WhatsApp message to 0551525352.</p>
+          </div>
+
+          <div class="process reveal">
+            <div class="number">02 — LOCATION</div>
+            <h3>Share location</h3>
+            <p>Send your location and tell us what happened.</p>
+          </div>
+
+          <div class="process reveal">
+            <div class="number">03 — RECOVERY</div>
+            <h3>Truck dispatched</h3>
+            <p>The appropriate recovery solution is arranged for your vehicle.</p>
+          </div>
+
+          <div class="process reveal">
+            <div class="number">04 — SAFE MOVE</div>
+            <h3>Vehicle transported</h3>
+            <p>Your vehicle is handled and transported to the requested destination.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="section-kicker">04 / Recovery Gallery</div>
+            <h2>Real recovery.<br>Serious equipment.</h2>
+          </div>
+          <p>
+            A visual showcase of towing and recovery equipment used as inspiration
+            for our professional service presentation.
+          </p>
+        </div>
+
+        <div class="gallery">
+          <div class="gallery-item large reveal">
+            <img src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&w=1400&q=85" alt="Tow truck recovery">
+            <div class="gallery-caption">Tow Truck Recovery</div>
+          </div>
+
+          <div class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1000&q=85" alt="Vehicle roadside">
+            <div class="gallery-caption">Roadside Assistance</div>
+          </div>
+
+          <div class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=1000&q=85" alt="Performance vehicle">
+            <div class="gallery-caption">Performance Vehicles</div>
+          </div>
+
+          <div class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=85" alt="Luxury vehicle">
+            <div class="gallery-caption">Luxury Vehicle Care</div>
+          </div>
+
+          <div class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=85" alt="Vehicle transport">
+            <div class="gallery-caption">Vehicle Transport</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLEET -->
+    <section class="section" id="fleet">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="section-kicker">05 / Recovery Types</div>
+            <h2>One service.<br>Many vehicles.</h2>
+          </div>
+          <p>
+            Recovery requirements vary by vehicle. We provide different
+            solutions for different situations.
+          </p>
+        </div>
+
+        <div class="vehicle-grid">
+          <article class="vehicle reveal">
+            <img src="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=1200&q=85" alt="Car recovery">
+            <div class="vehicle-info">
+              <h3>Everyday Cars</h3>
+              <p>Breakdown and roadside recovery for normal passenger vehicles.</p>
+            </div>
+          </article>
+
+          <article class="vehicle reveal">
+            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=85" alt="Tow truck">
+            <div class="vehicle-info">
+              <h3>Flatbed & Tow Recovery</h3>
+              <p>Secure vehicle loading and transport using suitable towing equipment.</p>
+            </div>
+          </article>
+
+          <article class="vehicle reveal">
+            <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=85" alt="Sports and luxury car">
+            <div class="vehicle-info">
+              <h3>Sports & Luxury</h3>
+              <p>Careful handling for specialist, premium and performance vehicles.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- AREAS -->
+    <section class="section" id="areas">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="section-kicker">06 / Service Areas</div>
+            <h2>Al Ain<br>and nearby areas.</h2>
+          </div>
+          <p>
+            Our website focuses on vehicle recovery services across Al Ain.
+            Send your location on WhatsApp to confirm service availability.
+          </p>
+        </div>
+
+        <div class="areas">
+          <div class="area reveal">📍 Al Ain City <span>•</span> Recovery</div>
+          <div class="area reveal">📍 Al Muwaiji <span>•</span> Recovery</div>
+          <div class="area reveal">📍 Al Jimi <span>•</span> Recovery</div>
+          <div class="area reveal">📍 Al Qattara <span>•</span> Recovery</div>
+          <div class="area reveal">📍 Al Bateen <span>•</span> Recovery</div>
+          <div class="area reveal">📍 Al Mutaredh <span>•</span> Recovery</div>
+          <div class="area reveal">📍 Al Khalidiya <span>•</span> Recovery</div>
+          <div class="area reveal">📍 Al Foah <span>•</span> Recovery</div>
+          <div class="area reveal">📍 Al Maqam <span>•</span> Recovery</div>
+          <div class="area reveal">📍 Zakher <span>•</span> Recovery</div>
+          <div class="area reveal">📍 Al Hili <span>•</span> Recovery</div>
+          <div class="area reveal">📍 Al Yahar <span>•</span> Recovery</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="section-kicker">07 / Customer Experience</div>
+            <h2>When the road<br>stops, stay calm.</h2>
+          </div>
+          <p>
+            Professional communication and careful recovery are at the heart
+            of a good roadside experience.
+          </p>
+        </div>
+
+        <div class="reviews">
+          <article class="review reveal">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Fast communication and very helpful when my car broke down.
+              The WhatsApp process was straightforward.”
+            </p>
+            <strong>Al Ain Customer</strong>
+            <small>Vehicle Recovery</small>
+          </article>
+
+          <article class="review reveal">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Needed a recovery truck late at night. The service was focused
+              on getting the vehicle moved safely.”
+            </p>
+            <strong>Al Ain Customer</strong>
+            <small>Emergency Recovery</small>
+          </article>
+
+          <article class="review reveal">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Easy to contact through WhatsApp and clear communication about
+              the recovery.”
+            </p>
+            <strong>Al Ain Customer</strong>
+            <small>Roadside Assistance</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="section-kicker">08 / FAQ</div>
+            <h2>Questions,<br>answered.</h2>
+          </div>
+          <p>
+            Quick answers about our Al Ain vehicle recovery service.
+          </p>
+        </div>
+
+        <div class="faq">
+
+          <details class="reveal">
+            <summary>Are you available 24/7?</summary>
+            <p>Yes. Al Ain Recovery is presented as a 24/7 emergency vehicle recovery service.</p>
+          </details>
+
+          <details class="reveal">
+            <summary>How do I request recovery?</summary>
+            <p>Send a WhatsApp message to 0551525352 with your location, vehicle type and a short description of the problem.</p>
+          </details>
+
+          <details class="reveal">
+            <summary>Do you recover sports and luxury cars?</summary>
+            <p>Yes. Specialist vehicles can require careful loading and transport, and sports/luxury recovery is one of the services highlighted on this website.</p>
+          </details>
+
+          <details class="reveal">
+            <summary>Do you provide flatbed recovery?</summary>
+            <p>Yes. Flatbed recovery is available as a service option for vehicles that need secure transportation.</p>
+          </details>
+
+          <details class="reveal">
+            <summary>Can you help with a dead battery?</summary>
+            <p>Battery boost assistance is included among the roadside services.</p>
+          </details>
+
+          <details class="reveal">
+            <summary>Can you help with a flat tyre?</summary>
+            <p>Tyre assistance is available. Send your location and vehicle details on WhatsApp.</p>
+          </details>
+
+          <details class="reveal">
+            <summary>Do you provide emergency fuel delivery?</summary>
+            <p>Fuel delivery assistance is listed as an emergency roadside service.</p>
+          </details>
+
+          <details class="reveal">
+            <summary>Which areas do you cover?</summary>
+            <p>The main service area is Al Ain, UAE. Send your exact location on WhatsApp to confirm availability.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="section-kicker">09 / Need Recovery?</div>
+          <h2>Don't stay stranded.<br>Message us now.</h2>
+          <p>
+            Send your location and vehicle details on WhatsApp.
+            Al Ain Recovery is available for emergency vehicle recovery support.
+          </p>
+
+          <a class="btn btn-wa" href="https://wa.me/971551525352?text=Hello%20Al%20Ain%20Recovery%2C%20I%20need%20vehicle%20recovery.%20My%20location%20is%3A" target="_blank" rel="noopener">
+            💬 WhatsApp 0551525352
+          </a>
+
+          <span class="cta-phone">Al Ain, UAE • 24/7 Emergency Recovery</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a class="logo" href="#home">
+            <div class="logo-mark">🚛</div>
+            <div>
+              <span>Al Ain Recovery</span>
+              <small>24/7 Vehicle Recovery</small>
+            </div>
+          </a>
+
+          <p>
+            Professional vehicle recovery, towing and roadside assistance
+            focused on Al Ain, UAE.
+          </p>
+        </div>
+
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Car Recovery</a></li>
+            <li><a href="#services">Tow Truck</a></li>
+            <li><a href="#services">Flatbed Recovery</a></li>
+            <li><a href="#services">Sports Car Recovery</a></li>
+            <li><a href="#services">Roadside Assistance</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#areas">Service Areas</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#fleet">Recovery Types</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>📍 Al Ain, UAE</li>
+            <li>🟢 24/7 Available</li>
+            <li>
+              <a href="https://wa.me/971551525352" target="_blank" rel="noopener">
+                💬 0551525352
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        <span>© 2026 Al Ain Recovery. All rights reserved.</span>
+        <span>24/7 Vehicle Recovery • Al Ain, UAE</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- MOBILE WHATSAPP -->
+  <a class="mobile-wa" href="https://wa.me/971551525352?text=Hello%20Al%20Ain%20Recovery%2C%20I%20need%20vehicle%20recovery." target="_blank" rel="noopener">
+    💬 WhatsApp Al Ain Recovery — 0551525352
+  </a>
+
+  <script>
+    /* Mobile navigation */
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
     });
-},{
-    threshold:.08
-});
 
-cards.forEach(el=>{
-    el.style.opacity="0";
-    el.style.transform="translateY(25px)";
-    el.style.transition="opacity .7s ease, transform .7s ease";
-    observer.observe(el);
-});
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
+    });
 
-/* Current year */
+    /* Reveal animations */
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold:.08
+      }
+    );
 
-document.querySelector(".copyright").innerHTML =
-"© " + new Date().getFullYear() +
-" Al Ain Recovery. All rights reserved.";
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 
-</script>
+    /* Smooth FAQ / accessibility */
+    document.querySelectorAll("summary").forEach(summary => {
+      summary.addEventListener("keydown", e => {
+        if(e.key === "Enter" || e.key === " "){
+          e.preventDefault();
+          summary.parentElement.open = !summary.parentElement.open;
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
